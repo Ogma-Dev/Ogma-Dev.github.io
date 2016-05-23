@@ -1,0 +1,4 @@
+Sitemap: https://ogma-dev.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: ogma-dev.github.io
