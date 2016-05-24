@@ -2,8 +2,8 @@
 .. title: Test Post
 .. slug: test-post
 .. date: 2016-05-23 17:59:37 UTC+01:00
-.. tags: 
-.. category: 
+.. tags: ignore
+.. category: ignore
 .. link: 
 .. description: This is a test post to make sure markdown is working as expected
 .. type: text

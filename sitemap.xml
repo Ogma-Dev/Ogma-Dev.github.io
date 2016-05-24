@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://ogma-dev.github.io/</loc>
-  <lastmod>2016-05-23T23:24:00Z</lastmod>
+  <lastmod>2016-05-23T23:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://ogma-dev.github.io/2016/</loc>
@@ -15,11 +15,27 @@
  </url>
  <url>
   <loc>https://ogma-dev.github.io/archive.html</loc>
-  <lastmod>2016-05-23T21:55:00Z</lastmod>
+  <lastmod>2016-05-23T23:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://ogma-dev.github.io/categories/</loc>
-  <lastmod>2016-05-23T17:21:00Z</lastmod>
+  <lastmod>2016-05-24T00:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ogma-dev.github.io/categories/cat_ignore/</loc>
+  <lastmod>2016-05-24T00:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ogma-dev.github.io/categories/cat_personal/</loc>
+  <lastmod>2016-05-24T00:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ogma-dev.github.io/categories/ignore/</loc>
+  <lastmod>2016-05-24T00:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ogma-dev.github.io/categories/personal/</loc>
+  <lastmod>2016-05-24T00:05:00Z</lastmod>
  </url>
  <url>
   <loc>https://ogma-dev.github.io/contact/</loc>
@@ -35,7 +51,11 @@
  </url>
  <url>
   <loc>https://ogma-dev.github.io/posts/</loc>
-  <lastmod>2016-05-23T17:21:00Z</lastmod>
+  <lastmod>2016-05-23T23:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ogma-dev.github.io/posts/about-me/</loc>
+  <lastmod>2016-05-23T23:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://ogma-dev.github.io/posts/test-post/</loc>
