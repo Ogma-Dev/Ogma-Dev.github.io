@@ -7,30 +7,50 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://ogma-dev.github.io/categories/cat_ignore.xml</loc>
-  <lastmod>2016-05-24T00:05:00Z</lastmod>
+  <lastmod>2016-05-24T00:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ogma-dev.github.io/categories/cat_personal.xml</loc>
-  <lastmod>2016-05-24T00:05:00Z</lastmod>
+  <lastmod>2016-05-24T00:42:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://ogma-dev.github.io/categories/cat_programming.xml</loc>
+  <lastmod>2016-05-24T01:06:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://ogma-dev.github.io/categories/flask.xml</loc>
+  <lastmod>2016-05-24T01:06:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ogma-dev.github.io/categories/ignore.xml</loc>
-  <lastmod>2016-05-24T00:05:00Z</lastmod>
+  <lastmod>2016-05-24T00:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ogma-dev.github.io/categories/personal.xml</loc>
-  <lastmod>2016-05-24T00:05:00Z</lastmod>
+  <lastmod>2016-05-24T00:42:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://ogma-dev.github.io/categories/programming.xml</loc>
+  <lastmod>2016-05-24T01:06:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://ogma-dev.github.io/categories/python.xml</loc>
+  <lastmod>2016-05-24T01:06:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://ogma-dev.github.io/categories/web.xml</loc>
+  <lastmod>2016-05-24T01:06:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ogma-dev.github.io/galleries/rss.xml</loc>
-  <lastmod>2016-05-23T21:55:00Z</lastmod>
+  <lastmod>2016-05-24T00:49:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ogma-dev.github.io/rss.xml</loc>
-  <lastmod>2016-05-24T00:05:00Z</lastmod>
+  <lastmod>2016-05-24T01:06:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ogma-dev.github.io/sitemap.xml</loc>
-  <lastmod>2016-05-24T00:05:00Z</lastmod>
+  <lastmod>2016-05-24T01:06:00Z</lastmod>
  </sitemap>
 </sitemapindex>

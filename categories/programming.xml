@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Ogma Development</title><link>https://ogma-dev.github.io/</link><description>Welcome to Ogma Development</description><atom:link href="https://ogma-dev.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 26 May 2016 00:19:08 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Simple Flask Webhook</title><link>https://ogma-dev.github.io/posts/simple-flask-webhook/</link><dc:creator>James Innes</dc:creator><description>&lt;div&gt;&lt;h2&gt;Introduction&lt;/h2&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Ogma Development (programming)</title><link>https://ogma-dev.github.io/</link><description></description><atom:link href="https://ogma-dev.github.io/categories/programming.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 26 May 2016 00:19:08 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Simple Flask Webhook</title><link>https://ogma-dev.github.io/posts/simple-flask-webhook/</link><dc:creator>James Innes</dc:creator><description>&lt;div&gt;&lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Since this is my first technical blog post, I though I'd start with something relatively simple. Also, please bare with me as I get to grips with the formatting of this confounded contraption!&lt;br&gt;
 If you have any feedback, then please feel free to send me a mail at &lt;a href="mailto:james.innes@ogma-dev.com"&gt;james.innes@ogma-dev.com&lt;/a&gt;.  &lt;/p&gt;
 &lt;p&gt;In this post, I'm going to give a quick guide on how to get a fairly simple, yet incredibly useful, webhook setup with &lt;a href="http://flask.pocoo.org/"&gt;Flask&lt;/a&gt;.  &lt;/p&gt;
@@ -153,36 +153,4 @@ It's not exactly Fort Knox, but it'll suffice for now.  &lt;/p&gt;
 Obviously printing out the json isn't all that useful, add your own code in to make your own handy service!&lt;br&gt;
 If you want to enable HTTPS (without using a full blown http service like nginx), pass your SSL certificates to Flask by modifying the run line to; &lt;code&gt;app.run(ssl_context=(ssl_cert_file, ssl_key_file))&lt;/code&gt; where the variables are paths to your certificates.  &lt;/p&gt;
 &lt;h3&gt;End Notes&lt;/h3&gt;
-&lt;p&gt;I hope you find this useful, and if you have any comments or have built on the examples and would like to share please feel free to &lt;a href="mailto:james.innes@ogma-dev.com"&gt;drop me a line&lt;/a&gt;.  &lt;/p&gt;&lt;/div&gt;</description><category>flask</category><category>programming</category><category>python</category><category>web</category><guid>https://ogma-dev.github.io/posts/simple-flask-webhook/</guid><pubDate>Tue, 24 May 2016 00:52:11 GMT</pubDate></item><item><title>About Me</title><link>https://ogma-dev.github.io/posts/about-me/</link><dc:creator>James Innes</dc:creator><description>&lt;div&gt;&lt;p&gt;Well, since this is nearly all setup I figured I should start (well, excluding that formatting test) with a relatively short and sweet introduction.  &lt;/p&gt;
-&lt;p&gt;I'm James; I currently work for a large company where, without getting too long-winded, I look after a lot of data, produce data reports, run simulations and write software to help the team I belong to produce reports/simulations in a more efficient manner.&lt;/p&gt;
-&lt;p&gt;I've always grown up around technology. My dad worked for a networking company back when I was a kid in the 90's, and was always brining home bits of old computers, modems, weird storage &lt;em&gt;things&lt;/em&gt; etc. I'd often go scavenging in the loft, where inevitably the cast-offs were stowed away for... well, "the future" as every male is accustomed to.  &lt;/p&gt;
-&lt;p&gt;I think my interest in programming began not long after getting the internet. I'm not sure how, but I stumbled into &lt;a href="http://www.sdf.org"&gt;SDF&lt;/a&gt;, a free UNIX shell account service from the 80's, where I tumbled down a rabbit hole of this magical new world of UNIX, telnet, SSH, IRC channels... All of it intrigued me from a ripe young age.  &lt;/p&gt;
-&lt;p&gt;Still being young I quite predictably loved video games, and inside this tavern of curiosity that was &lt;a href="http://www.sdf.org"&gt;SDF&lt;/a&gt; there was a &lt;a href="https://en.wikipedia.org/wiki/MUD"&gt;MUD&lt;/a&gt;. I was instantly hooked. I started off playing with clients to automate some of my inputs, then moved into looking at the game's codebase. I ended up changing bits then wrote a few snippets, and hence began my adventures into the world of programming...&lt;/p&gt;&lt;/div&gt;</description><category>personal</category><guid>https://ogma-dev.github.io/posts/about-me/</guid><pubDate>Mon, 23 May 2016 23:39:44 GMT</pubDate></item><item><title>Test Post</title><link>https://ogma-dev.github.io/posts/test-post/</link><dc:creator>James Innes</dc:creator><description>&lt;div&gt;&lt;h2&gt;Header 1&lt;/h2&gt;
-&lt;h3&gt;Header 2&lt;/h3&gt;
-&lt;h4&gt;Header 3&lt;/h4&gt;
-&lt;h5&gt;Header 4&lt;/h5&gt;
-&lt;h6&gt;Header 5&lt;/h6&gt;
-&lt;h6&gt;Header 6&lt;/h6&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;code&gt;in-line code&lt;/code&gt;&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="sd"&gt;"""&lt;/span&gt;
-&lt;span class="sd"&gt;This should have Python syntax highlighting&lt;/span&gt;
-&lt;span class="sd"&gt;"""&lt;/span&gt;
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;do_something&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;thing&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;None&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="n"&gt;thing&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-        &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"There isn't a thing!"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-        &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"We got the thing!"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-        &lt;span class="n"&gt;do_something_else&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;thing&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;Item One&lt;/li&gt;
-&lt;li&gt;Item Two&lt;ul&gt;
-&lt;li&gt;Subitem One&lt;/li&gt;
-&lt;li&gt;Subitem Two&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Item Three&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;</description><category>ignore</category><guid>https://ogma-dev.github.io/posts/test-post/</guid><pubDate>Mon, 23 May 2016 16:59:37 GMT</pubDate></item></channel></rss>
+&lt;p&gt;I hope you find this useful, and if you have any comments or have built on the examples and would like to share please feel free to &lt;a href="mailto:james.innes@ogma-dev.com"&gt;drop me a line&lt;/a&gt;.  &lt;/p&gt;&lt;/div&gt;</description><category>flask</category><category>programming</category><category>python</category><category>web</category><guid>https://ogma-dev.github.io/posts/simple-flask-webhook/</guid><pubDate>Tue, 24 May 2016 00:52:11 GMT</pubDate></item></channel></rss>
