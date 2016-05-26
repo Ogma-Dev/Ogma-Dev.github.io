@@ -229,14 +229,18 @@ Let's implement a simple token validation;  </p>
 <p>Wooft, well; that's a bit meatier. So, what's going on here...<br>
 When you start the app, it will check for an Environment Variable, called <code>WEBHOOK_VERIFY_TOKEN</code>, if there isn't one set it will automatically generate a token for you.<br>
 We initialise a dictionary of <code>authorised_clients</code>, which stores IP addresses (key) and the time they validated (value).<br>
-In order for an IP to become validated, they need to sent a GET request with a parameter <code>validate_key</code> equal to our webhooks key.<br>
+In order for an IP to become validated, they need to sent a GET request with a parameter <code>validate_key</code> equal to our webhooks token.<br>
 i.e. <code>curl 127.0.0.1:5000/webhook?verify_token=YOUR_TOKEN_HERE</code><br>
 Once an IP is registered the webhook will accept POSTs from it, the same as previously.
 It's not exactly Fort Knox, but it'll suffice for now.  </p>
 <h4>Further Improvements</h4>
-<p>If you want to add further authentication, I'd recommend checking out <a href="https://github.com/miguelgrinberg/flask-httpauth">Flask-HTTPAuth</a>.<br>
-Obviously printing out the json isn't all that useful, add your own code in to make your own handy service!<br>
-If you want to enable HTTPS (without using a full blown http service like nginx), pass your SSL certificates to Flask by modifying the run line to; <code>app.run(ssl_context=(ssl_cert_file, ssl_key_file))</code> where the variables are paths to your certificates.  </p>
+<p>This post is only supposed to give a brief introduction to writing webhooks and there are many improvements you could make which are probably outwith the scope of this post. However, here are a few suggestions to get you started!  </p>
+<h5>Persistent Authorised Clients</h5>
+<p>Since we only store the autorised IP addresses in a dictionary, they're lost whenever the application closes. You could store these into a file format, or even a database. <a href="http://flask-sqlalchemy.pocoo.org/">Flask-SQLAlchemy</a> makes simplifies using databases with Flask!</p>
+<h5>Added Authentication</h5>
+<p>If you want to add further authentication, I'd recommend checking out <a href="https://github.com/miguelgrinberg/flask-httpauth">Flask-HTTPAuth</a>.  </p>
+<h5>HTTPS</h5>
+<p>If you want to enable HTTPS (without using a full blown http service like nginx), pass your SSL certificates to Flask by modifying the run line to; <code>app.run(ssl_context=(ssl_cert_file, ssl_key_file))</code> where the variables are paths to your certificates.<br><a href="https://letsencrypt.org/getting-started/">LetsEncrypt</a> is a really quick and easy way to get setup with some certs!</p>
 <h3>End Notes</h3>
 <p>I hope you find this useful, and if you have any comments or have built on the examples and would like to share please feel free to <a href="mailto:james.innes@ogma-dev.com">drop me a line</a>.  </p>
 </div>

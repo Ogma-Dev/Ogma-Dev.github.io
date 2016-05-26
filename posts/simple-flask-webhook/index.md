@@ -163,15 +163,23 @@ if __name__ == '__main__':
 Wooft, well; that's a bit meatier. So, what's going on here...  
 When you start the app, it will check for an Environment Variable, called `WEBHOOK_VERIFY_TOKEN`, if there isn't one set it will automatically generate a token for you.  
 We initialise a dictionary of `authorised_clients`, which stores IP addresses (key) and the time they validated (value).  
-In order for an IP to become validated, they need to sent a GET request with a parameter `validate_key` equal to our webhooks key.  
+In order for an IP to become validated, they need to sent a GET request with a parameter `validate_key` equal to our webhooks token.  
 i.e. `curl 127.0.0.1:5000/webhook?verify_token=YOUR_TOKEN_HERE`  
 Once an IP is registered the webhook will accept POSTs from it, the same as previously.
 It's not exactly Fort Knox, but it'll suffice for now.  
 
 ### Further Improvements
+This post is only supposed to give a brief introduction to writing webhooks and there are many improvements you could make which are probably outwith the scope of this post. However, here are a few suggestions to get you started!  
+
+#### Persistent Authorised Clients
+Since we only store the autorised IP addresses in a dictionary, they're lost whenever the application closes. You could store these into a file format, or even a database. [Flask-SQLAlchemy](http://flask-sqlalchemy.pocoo.org/) makes simplifies using databases with Flask!
+
+#### Added Authentication
 If you want to add further authentication, I'd recommend checking out [Flask-HTTPAuth](https://github.com/miguelgrinberg/flask-httpauth).  
-Obviously printing out the json isn't all that useful, add your own code in to make your own handy service!  
+
+#### HTTPS
 If you want to enable HTTPS (without using a full blown http service like nginx), pass your SSL certificates to Flask by modifying the run line to; `app.run(ssl_context=(ssl_cert_file, ssl_key_file))` where the variables are paths to your certificates.  
+[LetsEncrypt](https://letsencrypt.org/getting-started/) is a really quick and easy way to get setup with some certs!
 
 ## End Notes
 I hope you find this useful, and if you have any comments or have built on the examples and would like to share please feel free to [drop me a line](mailto:james.innes@ogma-dev.com).  

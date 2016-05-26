@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Ogma Development (programming)</title><link>https://ogma-dev.github.io/</link><description></description><atom:link href="https://ogma-dev.github.io/categories/programming.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 26 May 2016 00:19:08 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Simple Flask Webhook</title><link>https://ogma-dev.github.io/posts/simple-flask-webhook/</link><dc:creator>James Innes</dc:creator><description>&lt;div&gt;&lt;h2&gt;Introduction&lt;/h2&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>Ogma Development (programming)</title><link>https://ogma-dev.github.io/</link><description></description><atom:link href="https://ogma-dev.github.io/categories/programming.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 26 May 2016 00:41:26 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Simple Flask Webhook</title><link>https://ogma-dev.github.io/posts/simple-flask-webhook/</link><dc:creator>James Innes</dc:creator><description>&lt;div&gt;&lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Since this is my first technical blog post, I though I'd start with something relatively simple. Also, please bare with me as I get to grips with the formatting of this confounded contraption!&lt;br&gt;
 If you have any feedback, then please feel free to send me a mail at &lt;a href="mailto:james.innes@ogma-dev.com"&gt;james.innes@ogma-dev.com&lt;/a&gt;.  &lt;/p&gt;
 &lt;p&gt;In this post, I'm going to give a quick guide on how to get a fairly simple, yet incredibly useful, webhook setup with &lt;a href="http://flask.pocoo.org/"&gt;Flask&lt;/a&gt;.  &lt;/p&gt;
@@ -144,13 +144,18 @@ Let's implement a simple token validation;  &lt;/p&gt;
 &lt;p&gt;Wooft, well; that's a bit meatier. So, what's going on here...&lt;br&gt;
 When you start the app, it will check for an Environment Variable, called &lt;code&gt;WEBHOOK_VERIFY_TOKEN&lt;/code&gt;, if there isn't one set it will automatically generate a token for you.&lt;br&gt;
 We initialise a dictionary of &lt;code&gt;authorised_clients&lt;/code&gt;, which stores IP addresses (key) and the time they validated (value).&lt;br&gt;
-In order for an IP to become validated, they need to sent a GET request with a parameter &lt;code&gt;validate_key&lt;/code&gt; equal to our webhooks key.&lt;br&gt;
+In order for an IP to become validated, they need to sent a GET request with a parameter &lt;code&gt;validate_key&lt;/code&gt; equal to our webhooks token.&lt;br&gt;
 i.e. &lt;code&gt;curl 127.0.0.1:5000/webhook?verify_token=YOUR_TOKEN_HERE&lt;/code&gt;&lt;br&gt;
 Once an IP is registered the webhook will accept POSTs from it, the same as previously.
 It's not exactly Fort Knox, but it'll suffice for now.  &lt;/p&gt;
 &lt;h4&gt;Further Improvements&lt;/h4&gt;
-&lt;p&gt;If you want to add further authentication, I'd recommend checking out &lt;a href="https://github.com/miguelgrinberg/flask-httpauth"&gt;Flask-HTTPAuth&lt;/a&gt;.&lt;br&gt;
-Obviously printing out the json isn't all that useful, add your own code in to make your own handy service!&lt;br&gt;
-If you want to enable HTTPS (without using a full blown http service like nginx), pass your SSL certificates to Flask by modifying the run line to; &lt;code&gt;app.run(ssl_context=(ssl_cert_file, ssl_key_file))&lt;/code&gt; where the variables are paths to your certificates.  &lt;/p&gt;
+&lt;p&gt;This post is only supposed to give a brief introduction to writing webhooks and there are many improvements you could make which are probably outwith the scope of this post. However, here are a few suggestions to get you started!  &lt;/p&gt;
+&lt;h5&gt;Persistent Authorised Clients&lt;/h5&gt;
+&lt;p&gt;Since we only store the autorised IP addresses in a dictionary, they're lost whenever the application closes. You could store these into a file format, or even a database. &lt;a href="http://flask-sqlalchemy.pocoo.org/"&gt;Flask-SQLAlchemy&lt;/a&gt; makes simplifies using databases with Flask!&lt;/p&gt;
+&lt;h5&gt;Added Authentication&lt;/h5&gt;
+&lt;p&gt;If you want to add further authentication, I'd recommend checking out &lt;a href="https://github.com/miguelgrinberg/flask-httpauth"&gt;Flask-HTTPAuth&lt;/a&gt;.  &lt;/p&gt;
+&lt;h5&gt;HTTPS&lt;/h5&gt;
+&lt;p&gt;If you want to enable HTTPS (without using a full blown http service like nginx), pass your SSL certificates to Flask by modifying the run line to; &lt;code&gt;app.run(ssl_context=(ssl_cert_file, ssl_key_file))&lt;/code&gt; where the variables are paths to your certificates.&lt;br&gt;
+&lt;a href="https://letsencrypt.org/getting-started/"&gt;LetsEncrypt&lt;/a&gt; is a really quick and easy way to get setup with some certs!&lt;/p&gt;
 &lt;h3&gt;End Notes&lt;/h3&gt;
 &lt;p&gt;I hope you find this useful, and if you have any comments or have built on the examples and would like to share please feel free to &lt;a href="mailto:james.innes@ogma-dev.com"&gt;drop me a line&lt;/a&gt;.  &lt;/p&gt;&lt;/div&gt;</description><category>flask</category><category>programming</category><category>python</category><category>web</category><guid>https://ogma-dev.github.io/posts/simple-flask-webhook/</guid><pubDate>Tue, 24 May 2016 00:52:11 GMT</pubDate></item></channel></rss>
