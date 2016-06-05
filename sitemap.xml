@@ -7,11 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://ogma-dev.github.io/</loc>
-  <lastmod>2016-05-24T00:42:00Z</lastmod>
+  <lastmod>2016-06-04T11:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://ogma-dev.github.io/2016/</loc>
-  <lastmod>2016-05-24T00:42:00Z</lastmod>
+  <lastmod>2016-06-04T11:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://ogma-dev.github.io/archive.html</loc>
@@ -19,70 +19,70 @@
  </url>
  <url>
   <loc>https://ogma-dev.github.io/categories/</loc>
-  <lastmod>2016-05-24T01:06:00Z</lastmod>
+  <lastmod>2016-06-04T11:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://ogma-dev.github.io/categories/cat_ignore/</loc>
-  <lastmod>2016-05-24T00:42:00Z</lastmod>
+  <lastmod>2016-06-04T11:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://ogma-dev.github.io/categories/cat_personal/</loc>
-  <lastmod>2016-05-24T00:42:00Z</lastmod>
+  <lastmod>2016-06-04T11:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://ogma-dev.github.io/categories/cat_programming/</loc>
-  <lastmod>2016-05-24T01:06:00Z</lastmod>
+  <lastmod>2016-06-04T11:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://ogma-dev.github.io/categories/flask/</loc>
-  <lastmod>2016-05-24T01:06:00Z</lastmod>
+  <lastmod>2016-06-04T11:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://ogma-dev.github.io/categories/ignore/</loc>
-  <lastmod>2016-05-24T00:42:00Z</lastmod>
+  <lastmod>2016-06-04T11:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://ogma-dev.github.io/categories/personal/</loc>
-  <lastmod>2016-05-24T00:42:00Z</lastmod>
+  <lastmod>2016-06-04T11:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://ogma-dev.github.io/categories/programming/</loc>
-  <lastmod>2016-05-24T01:06:00Z</lastmod>
+  <lastmod>2016-06-04T11:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://ogma-dev.github.io/categories/python/</loc>
-  <lastmod>2016-05-24T01:06:00Z</lastmod>
+  <lastmod>2016-06-04T11:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://ogma-dev.github.io/categories/web/</loc>
-  <lastmod>2016-05-24T01:06:00Z</lastmod>
+  <lastmod>2016-06-04T11:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://ogma-dev.github.io/contact/</loc>
-  <lastmod>2016-05-24T00:42:00Z</lastmod>
+  <lastmod>2016-06-04T11:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://ogma-dev.github.io/galleries/</loc>
-  <lastmod>2016-05-24T00:42:00Z</lastmod>
+  <lastmod>2016-06-04T11:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://ogma-dev.github.io/listings/</loc>
-  <lastmod>2016-05-24T00:42:00Z</lastmod>
+  <lastmod>2016-06-04T11:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://ogma-dev.github.io/posts/</loc>
-  <lastmod>2016-05-24T00:52:00Z</lastmod>
+  <lastmod>2016-06-04T11:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://ogma-dev.github.io/posts/about-me/</loc>
-  <lastmod>2016-05-24T00:42:00Z</lastmod>
+  <lastmod>2016-06-04T11:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://ogma-dev.github.io/posts/simple-flask-webhook/</loc>
-  <lastmod>2016-05-24T00:52:00Z</lastmod>
+  <lastmod>2016-06-04T11:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://ogma-dev.github.io/posts/test-post/</loc>
-  <lastmod>2016-05-24T00:42:00Z</lastmod>
+  <lastmod>2016-06-04T11:23:00Z</lastmod>
  </url>
 </urlset>

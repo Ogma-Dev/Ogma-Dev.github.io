@@ -210,7 +210,7 @@ Let's implement a simple token validation;  </p>
 <p>Wooft, well; that's a bit meatier. So, what's going on here...<br>
 When you start the app, it will check for an Environment Variable, called <code>WEBHOOK_VERIFY_TOKEN</code>, if there isn't one set it will automatically generate a token for you.<br>
 We initialise a dictionary of <code>authorised_clients</code>, which stores IP addresses (key) and the time they validated (value).<br>
-In order for an IP to become validated, they need to sent a GET request with a parameter <code>validate_key</code> equal to our webhooks token.<br>
+In order for an IP to become validated, they need to sent a GET request with a parameter <code>verify_token</code> equal to our webhooks token.<br>
 i.e. <code>curl 127.0.0.1:5000/webhook?verify_token=YOUR_TOKEN_HERE</code><br>
 Once an IP is registered the webhook will accept POSTs from it, the same as previously.
 It's not exactly Fort Knox, but it'll suffice for now.  </p>

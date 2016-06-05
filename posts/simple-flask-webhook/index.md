@@ -163,7 +163,7 @@ if __name__ == '__main__':
 Wooft, well; that's a bit meatier. So, what's going on here...  
 When you start the app, it will check for an Environment Variable, called `WEBHOOK_VERIFY_TOKEN`, if there isn't one set it will automatically generate a token for you.  
 We initialise a dictionary of `authorised_clients`, which stores IP addresses (key) and the time they validated (value).  
-In order for an IP to become validated, they need to sent a GET request with a parameter `validate_key` equal to our webhooks token.  
+In order for an IP to become validated, they need to sent a GET request with a parameter `verify_token` equal to our webhooks token.  
 i.e. `curl 127.0.0.1:5000/webhook?verify_token=YOUR_TOKEN_HERE`  
 Once an IP is registered the webhook will accept POSTs from it, the same as previously.
 It's not exactly Fort Knox, but it'll suffice for now.  
